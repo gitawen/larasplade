@@ -49,8 +49,8 @@ class Students extends AbstractTable
     public function configure(SpladeTable $table)
     {
         $table
-            ->withGlobalSearch(columns: ['student_id'])
-            ->column('student_id', sortable: true)
+            ->withGlobalSearch(columns: ['id'])
+            ->column('id', sortable: true)
             ->column('uid', sortable: true)
             ->column('LRN', sortable: true)
             ->column('fcm_token', sortable: true)
